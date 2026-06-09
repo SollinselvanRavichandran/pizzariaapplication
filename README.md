@@ -1,1 +1,1 @@
-# pizzariaapplication
+This is an application done by me for my hands-on.
