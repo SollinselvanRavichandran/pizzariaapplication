@@ -10,8 +10,8 @@ const auth=require('./middleware/Auth');
 
 
 const app=express();
+app.use(cors({origin:["http://localhost:5173","https://sollinselvan.vercel.app"],credentials:true}));
 app.use(express.json());
-app.use(cors({origin:["http://localhost:5173","https://sollinselvan.vercel.app/"],credentials:true}));
 app.use(cookieParser());
 
 
