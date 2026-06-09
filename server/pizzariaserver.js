@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express=require('express');
-const {Pizza,Ingredients,Shoppingcart,User}=require('../PIZZARIADB');
+const {Pizza,Ingredients,Shoppingcart,User}=require('./PIZZARIADB');
 const mongoose=require('mongoose');
 const cors=require('cors');
 const jwt=require('jsonwebtoken');
