@@ -15,7 +15,7 @@ app.use(cors({origin:"http://localhost:5173",credentials:true}));
 app.use(cookieParser());
 
 
-mongoose.connect("mongodb://localhost:27017/PIZZARIADB").then(()=>{
+mongoose.connect(process.env.MONGO_URI).then(()=>{
     console.log("Database connected Successfully");
 }).catch((error)=>{
     console.log("Error connecting to database:",error);
