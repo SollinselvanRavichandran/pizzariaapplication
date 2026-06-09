@@ -14,7 +14,7 @@ function Cart() {
    try {
 
       const response = await axios.get(
-        `http://localhost:3000/api/Getcartitems/all/${user._id}`
+        `https://pizzariaapplication.onrender.com/api/Getcartitems/all/${user._id}`
       );
 
       await setCartitem(response.data);
@@ -53,7 +53,7 @@ function Cart() {
     const totalprice=singleprice*newQuantity;
 
     try{
-       await axios.put(`http://localhost:3000/api/cartitem/update/${item._id}`,{
+       await axios.put(`https://pizzariaapplication.onrender.com/api/cartitem/update/${item._id}`,{
         quantity:newQuantity,
         totalPrice:totalprice
        });
@@ -67,7 +67,7 @@ function Cart() {
 
   const deleteitem=async (item)=>{
     try{
-        await axios.delete(`http://localhost:3000/api/cartitem/delete/${item._id}`);
+        await axios.delete(`https://pizzariaapplication.onrender.com/api/cartitem/delete/${item._id}`);
         await fetchcartitems();
     }
     catch(error){

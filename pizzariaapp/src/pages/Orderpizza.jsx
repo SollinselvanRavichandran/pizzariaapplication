@@ -22,7 +22,7 @@ function Orderpizza() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/Getpizzas/all")
+      .get("https://pizzariaapplication.onrender.com/api/Getpizzas/all")
       .then((response) => {
         setPizza(response.data);
       })

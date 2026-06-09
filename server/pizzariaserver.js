@@ -11,7 +11,7 @@ const auth=require('./middleware/Auth');
 
 const app=express();
 app.use(express.json());
-app.use(cors({origin:"http://localhost:5173",credentials:true}));
+app.use(cors({origin:["http://localhost:5173","https://sollinselvan.vercel.app/"],credentials:true}));
 app.use(cookieParser());
 
 
@@ -163,7 +163,7 @@ app.post("/api/user/post",async (req,res)=>{
     try{
         const user=await User.create(req.body);
         const token=jwt.sign({id:user._id},process.env.JWT_SECRET,{expiresIn:"7d"});
-        res.cookie("token",token,{httpOnly:true,secure:false,sameSite:"lax",maxAge:7*24*60*60*1000});
+        res.cookie("token",token,{httpOnly:true,secure:true,sameSite:"none",maxAge:7*24*60*60*1000});
         return res.status(200).json({success:true,data:user});
     }
     catch(error){
@@ -194,7 +194,7 @@ app.post("/api/login",async (req,res)=>{
             id:user._id
         },process.env.JWT_SECRET,{expiresIn:"7d"});
 
-        res.cookie("token",token,{httpOnly:true,secure:false,sameSite:"lax",maxAge: 7*24*60*60*1000});
+        res.cookie("token",token,{httpOnly:true,secure:true,sameSite:"none",maxAge: 7*24*60*60*1000});
 
         return res.status(200).json({success:true,message:"Login successful",user});
     }

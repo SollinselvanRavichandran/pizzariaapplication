@@ -54,7 +54,7 @@ function Buildurpizza() {
 
   addToCart(cartItem);
   try{
-      const response =await axios.post("http://localhost:3000/api/Postcart",cartItem);
+      const response =await axios.post("https://pizzariaapplication.onrender.com/api/Postcart",cartItem);
       console.log(response.data)
   }
   catch(error){
@@ -77,7 +77,7 @@ function Buildurpizza() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/Getingredients/all")
+      .get("https://pizzariaapplication.onrender.com/api/Getingredients/all")
       .then((response) => {
         setIngredients(response.data);
       })

@@ -19,7 +19,7 @@ function Registerpage() {
   const registeruser = () => {
     axios
       .post(
-        "http://localhost:3000/api/user/post",
+        "https://pizzariaapplication.onrender.com/api/user/post",
         { username, email, password },
         { withCredentials: true },
       )
