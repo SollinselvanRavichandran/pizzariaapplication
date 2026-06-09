@@ -19,7 +19,7 @@ export const LoginProvider = ({ children }) => {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:3000/api/me",
+        "https://pizzariaapplication.onrender.com/api/me",
 
         {
           withCredentials: true,
