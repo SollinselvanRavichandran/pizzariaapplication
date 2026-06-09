@@ -5,7 +5,7 @@ const mongoose=require('mongoose');
 const cors=require('cors');
 const jwt=require('jsonwebtoken');
 const cookieParser=require('cookie-parser');
-const auth=require('../middleware/Auth');
+const auth=require('./middleware/Auth');
 
 
 
