@@ -1,0 +1,61 @@
+.orderpizzacontainer{
+    width:100%;
+    min-height:100vh;
+    border:1px solid #ffc107;
+    border-radius: 5px;
+}
+
+.pizzacontentcontainer{
+    display:flex;
+    flex-direction: row;
+    min-height:450px;
+    margin-top:20px;
+    box-shadow:0px 2px 4px; 
+}
+
+.insidepizzacontainer1{
+    display:flex;
+    flex-direction: column;
+    width:200px;
+    padding-left:auto;
+}
+
+.insidepizzacontainer2{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.insidepizzacontainer3{
+    width:300px;
+    padding:10px;
+}
+
+.description{
+    text-align: justify;
+}
+
+.ingredients{
+    text-align: justify;
+}
+
+.toppings{
+    text-align: left;
+}
+
+.addtocartbutton{
+    color:white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+.ingredientsspan{
+    text-align: left;
+    align-items: left;
+}
+
+.toppingsspan{
+    text-align: left;
+    align-items: left;
+}

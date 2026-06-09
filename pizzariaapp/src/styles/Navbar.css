@@ -1,0 +1,194 @@
+.nav{
+      background-color: black;
+      border-radius: 10px;
+      min-height: 150px;
+}
+.div1{
+      display: flex;
+      width:100%;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+      gap: 25px;
+      flex-wrap:wrap;
+}
+.heading1{
+      color: grey;
+      font-weight: normal;
+}
+.link{
+      color: grey;
+      text-decoration: none;
+      font-size: 25px;
+}
+.cart{
+      margin-right: 30px !important;
+      margin-top:10px;
+      height: 70px;
+      width: 200px;
+      background-color: #ffc107;
+      border-radius:10px;
+      text-align: center !important;
+      color: white !important;
+      font-size: 19px !important;
+
+}
+.para{
+      font-size: 25px;
+      text-align: justify;
+}
+.ingredientp{
+      font-size: 25px;
+      text-align: left;
+      margin-top: 30px;
+}
+
+.ingredientdiv{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 100px;
+      text-align: left;
+}
+
+.chefdiv{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+}
+.chefp{
+      font-size: 25px;
+      text-align: left;
+      margin-top: 30px;
+}
+
+.clockdiv{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+}
+
+.footerstyle{
+      color:#ffc107;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      height:50px;
+      padding:40px;
+}
+    
+.usericon{
+      font-size:60px !important;
+      width:50px !important;
+      color:white !important;
+      margin-left:15px;
+      padding-top:10px;
+      padding-left:30px;
+      margin-bottom: 0px;
+      padding-bottom: 0px;
+}
+
+.userdiv{
+      height: 80%;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-right:30px;
+      margin-left:auto;
+}
+.login{
+      color:white !important;
+      text-align: center !important;
+}
+.userdivlogout{
+      margin-left:auto;
+      display:flex;
+      height:100%;
+      width:700px;
+      flex-direction:row;
+      justify-content: center;
+      align-items:center;
+      gap:15px;
+
+}
+.logindiv{
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-content: center;
+      justify-content: center;
+      width:150px;
+}
+.logoutbutton{
+      margin-right: 10px !important;
+      margin-top:10px;
+      margin-left:5px;
+      height: 70px;
+      width: 200px;
+      background-color: #ffc107;
+      border-radius:10px;
+      text-align: center !important;
+      color: white !important;
+      font-size: 19px !important;
+}
+
+
+
+
+
+@media(max-width:768px){
+
+      .div1{
+      display: flex;
+      width:100%;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+      gap: 25px;
+      flex-wrap:wrap;
+}
+
+      .heading1{
+
+            font-size:35px;
+
+      }
+
+      .link{
+
+            font-size:20px;
+
+      }
+
+      .userdiv,
+      .userdivlogout{
+
+            margin-left:0;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+
+      }
+
+      .cart{
+
+            width:220px;
+            height:55px;
+            font-size:16px !important;
+
+      }
+
+      .logoutbutton{
+
+            width:220px;
+            height:55px;
+
+      }
+
+      .usericon{
+
+            font-size:45px !important;
+
+      }
+}

@@ -1,0 +1,72 @@
+.buildurpizzacontainer{
+    height:100%;
+    border-radius: 5px;
+    border:1px solid #ffc107;
+    width:100vw;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+.tablecontainer{
+    width: 50%;
+    border-style: solid;
+    border-color: silver;
+    border-width: 1px;
+}
+.ingredientpricedata{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: justify;
+    text-align: center;
+    gap:20px;
+}
+.ingredientimage{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.ingredientcolumn2{
+    width:200px;
+}
+
+.ingredientcolumn3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top:25px;
+}
+
+.customcheckbox{
+    width:15px;
+    height:15px;
+    background-color: silver;
+    accent-color:silver;
+    cursor:pointer;
+    border-radius: 50%;
+}
+
+.totalprice{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: auto;
+    padding-left: 20px;
+    font-weight: bold;
+    color:rgb(30, 19, 187);
+}
+
+.buildyourpizzabutton{
+    background-color: black;
+    color:#ffc107;
+    width:180px;
+    height:50px;
+    border-radius: 5px;
+    font-size: 23px;
+    border-style: solid;
+    border-color: #ffc107;
+    margin-bottom: 5px;
+}
